@@ -6,15 +6,15 @@
 */
 
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+/* Global styles and reset */
+
 :root {
 	--primary-color: #60175d;
 	--primary-variant: #ff2d2d;
 	--secondary-color: #5d6017;
 	--tertiary-color: #175d60;
-	--on-primary: rgb(250, 250, 250);
-	--on-background: rgb(66, 66, 66);
-	--on-background-alt: rgba(66, 66, 66, 0.7);
-	--background: rgb(255, 255, 255);
+	--plain-white: white;
 	--box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 * {
@@ -29,6 +29,7 @@ html {
 }
 a {
 	text-decoration: none;
+	color: var(--plain-white);
 }
 .container {
 	min-height: 100vh;
@@ -37,6 +38,16 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
 img {
 	height: 100%;
 	width: 100%;
@@ -83,8 +94,42 @@ p {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: white;
+	color: var(--plain-white);
 }
 .brand h1 span {
 	color: var(--primary-color);
 }
+
+ul {
+	list-style: none;
+}
+
+/* Header section */
+.nav-bar {
+	height: 10%;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 3rem;
+	background-color: var(--tertiary-color);
+}
+
+.nav-bar a {
+	font-size: 1.8rem;
+}
+
+.nav-bar div {
+	flex-basis: 55%;
+}
+
+.nav-bar ul {
+	flex-basis: 45%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-bar ul li a:hover {
+	color: var(--primary-color);
+}
+
+/* Header section end */
