@@ -271,6 +271,9 @@ ul {
 
 /* Hero section */
 #hero {
+	background-image: url(./img/cyber-city_compressed.png);
+	background-size: cover;
+	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
