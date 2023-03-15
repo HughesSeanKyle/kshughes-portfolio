@@ -3,13 +3,14 @@ const navBar = document.querySelector('.nav-bar');
 const skillsHeading = document.querySelector('.skills-heading');
 const projectHeading = document.querySelector('.project-heading');
 const aboutHeading = document.querySelector('.about-heading');
+const contactHeading = document.querySelector('.contact-heading');
 
 // ****Get the postion of an elm on the Y-axis
-// const element = document.getElementById('thththt');
-// const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+const element = document.getElementById('thththt');
+const elementPosition = element.getBoundingClientRect().top + window.scrollY;
 
-// console.log('element', element);
-// console.log('elementPosition', elementPosition);
+console.log('element', element);
+console.log('elementPosition', elementPosition);
 
 // ****Get the postion of an elm on the Y-axis END
 
@@ -43,5 +44,12 @@ document.addEventListener('scroll', () => {
 		aboutHeading.classList.add('tracking-in-expand');
 	} else {
 		aboutHeading.classList.remove('tracking-in-expand');
+	}
+
+	// Scroll animation for Contact heading
+	if (scroll_position > 7704) {
+		contactHeading.classList.add('tracking-in-expand');
+	} else {
+		contactHeading.classList.remove('tracking-in-expand');
 	}
 });
