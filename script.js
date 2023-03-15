@@ -2,11 +2,16 @@
 const navBar = document.querySelector('.nav-bar');
 const skillsHeading = document.querySelector('.skills-heading');
 const projectHeading = document.querySelector('.project-heading');
+const aboutHeading = document.querySelector('.about-heading');
+
+// ****Get the postion of an elm on the Y-axis
 // const element = document.getElementById('thththt');
 // const elementPosition = element.getBoundingClientRect().top + window.scrollY;
 
 // console.log('element', element);
 // console.log('elementPosition', elementPosition);
+
+// ****Get the postion of an elm on the Y-axis END
 
 // Event listeners
 document.addEventListener('scroll', () => {
@@ -31,5 +36,12 @@ document.addEventListener('scroll', () => {
 		projectHeading.classList.add('tracking-in-expand');
 	} else {
 		projectHeading.classList.remove('tracking-in-expand');
+	}
+
+	// Scroll animation for About heading
+	if (scroll_position > 6417) {
+		aboutHeading.classList.add('tracking-in-expand');
+	} else {
+		aboutHeading.classList.remove('tracking-in-expand');
 	}
 });
