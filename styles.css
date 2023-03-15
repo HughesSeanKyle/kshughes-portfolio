@@ -199,7 +199,8 @@ ul {
 	align-items: center;
 	justify-content: space-between;
 	padding: 1rem 3rem;
-	background-color: var(--tertiary-color);
+	background-color: transparent;
+	transition: background-color 0.3s ease-in-out;
 }
 
 .nav-bar a {
