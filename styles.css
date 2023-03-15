@@ -53,6 +53,13 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
+
+video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -61,6 +68,7 @@ p {
 	font-weight: 300;
 	letter-spacing: 0.05rem;
 }
+
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
@@ -70,6 +78,7 @@ p {
 	letter-spacing: 0.2rem;
 	text-align: center;
 }
+
 .section-title span {
 	color: var(--primary-color);
 }
@@ -86,15 +95,18 @@ p {
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
+	border-radius: 15px;
 }
+
 .cta:hover {
 	color: white;
 	background-color: var(--primary-color);
 }
+
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: var(--plain-white);
+	color: white;
 }
 .brand h1 span {
 	color: var(--primary-color);
@@ -142,3 +154,50 @@ ul {
 }
 
 /* Header section end */
+
+/* Hero section */
+#hero {
+	position: relative;
+	z-index: 1;
+}
+#hero::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 1;
+}
+
+.hero-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -90%);
+	text-align: center;
+	z-index: 2;
+}
+
+.hero-section-title {
+	font-size: 6.3rem;
+	font-weight: 300;
+	color: var(--plain-white);
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+
+.hero-pargraphs {
+	color: var(--plain-white);
+	font-size: 2.7rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+
+/* Hero section end*/
