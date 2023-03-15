@@ -7,68 +7,234 @@
 			name="description"
 			content="Briefly describe the content of the page in less than 155 characters. This is used by search engines to understand what the page is about."
 		/>
-    <link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles.css" />
 		<title>Portfolio KSH</title>
 	</head>
 	<body>
+		<!-- Header -->
 		<header id="header">
 			<nav class="row nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1>K<span>yl</span>e S<span>ea</span>n H<span>ughe</span>s</h1>
-          </a>
-        </div>
+				<div class="brand">
+					<a href="#hero">
+						<h1>K<span>yl</span>e S<span>ea</span>n H<span>ughe</span>s</h1>
+					</a>
+				</div>
 				<ul class="row">
-					<li><a href="#hero" >HOME</a></li>
-					<li><a href="#skills" >SKILLS</a></li>
-					<li><a href="#projects" >PROJECTS</a></li>
-					<li><a href="#about" >ABOUT</a></li>
-					<li><a href="#contact" >CONTACT</a></li>
+					<li><a href="#hero">HOME</a></li>
+					<li><a href="#skills">SKILLS</a></li>
+					<li><a href="#projects">PROJECTS</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
+		<!-- Header end -->
+
 		<main>
-      <section id="hero">
-				<h1>Home</h1>
-				<p>
-					Add hero image here and cta here 
-				</p>
+			<!-- Hero Section  -->
+			<section id="hero">
+				<video loop muted autoplay>
+					<source src="./video/site-vid-2.mp4" type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+				<div class="hero-content">
+					<h1 class="hero-section-title tracking-in-contract-bck-bottom">
+						Hello, I'm Kyle
+					</h1>
+					<p class="hero-pargraphs tracking-in-contract-bck-bottom">
+						Welcome to my portfolio
+					</p>
+					<a href="#projects" class="cta">PROJECTS</a>
+				</div>
 			</section>
+			<!-- End Hero Section  -->
 
-      <section id="skills">
-				<h1>Skills</h1>
-				<p>
-					List all skill items here
-				</p>
+			<!-- Skills section -->
+			<section id="skills">
+				<div class="skills column">
+					<div class="skills-top">
+						<h1 class="section-title skills-heading">Sk<span>i</span>lls</h1>
+						<p>
+							I am proficient in fullstack development using the Javascript
+							language. I am also proficient in some blockchain technologies
+							which are dicussed in more detail below.
+						</p>
+					</div>
+					<div class="skills-bottom row">
+						<div class="skills-item column">
+							<div class="icon"><img src="./img/Skill-Logos/1.Html.png" /></div>
+							<h2>HTML</h2>
+							<p>
+								I have hands-on proficiency with HTML. I ensure to structure my
+								HTML with SEO best practices in mind, and stick to BEM
+								conventions as close as I can.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon"><img src="./img/Skill-Logos/2.Css.png" /></div>
+							<h2>CSS</h2>
+							<p>
+								I am well versed in areas such as selectors, properties, values,
+								cascading, specificity, box model, layouts (Flexbox and CSS
+								Grid), media queries, and animations.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/3.Javascript.png" />
+							</div>
+							<h2>Javascript</h2>
+							<p>
+								I am well versed in areas such as DOM manipulation, Events and
+								Event Listeners, Asynchronous Programming, Error Handling, API
+								consumption, and much more..
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/4.React-removebg.png" />
+							</div>
+							<h2>React</h2>
+							<p>
+								I am well versed in areas such as Components and Props, State
+								and Lifecycle, Methods, Conditional Rendering, React Router,
+								Higher-Order Components, and much more..
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/10.bootstrap.png" />
+							</div>
+							<h2>Bootstrap</h2>
+							<p>
+								I have hands-on experience in using bootstrap. It speeds up my
+								workflow and I do not need to think of class names as this is
+								aready provided. This is one of my favorite CSS frameworks.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/11.tailwind.png" />
+							</div>
+							<h2>Tailwind CSS</h2>
+							<p>
+								I have recently started using Tailwind CSS in some of my
+								personal projects and have really come to enjoy using it.
+								Tailwind helps me keep my styling consistent.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/12.redux-rembg.png" />
+							</div>
+							<h2>Redux</h2>
+							<p>
+								I have hands-on experience with Redux. I like the fact that
+								there is one centralized store for all my state. This makes
+								tracking state easy via the redux dev tools.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/13.nodejs.png" />
+							</div>
+							<h2>Node js</h2>
+							<p>
+								I enjoy using Node js to spin up web servers with express. I
+								have also built many backend solutions with Node js. Both in a
+								professional capacity and on personal projects.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/14.postmanb4.svg" />
+							</div>
+							<h2>Postman</h2>
+							<p>
+								I always use Postman as a go to for testing my express APIs
+								before implementing them clientside. Very helpful when trying to
+								visualize how the clientside will work eventually.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/15.mongob4-rem.png" />
+							</div>
+							<h2>Mongo DB</h2>
+							<p>
+								I am well versed in performing CRUD operations using Mongo DB.
+								Mongoose is the ORM I use when implementing these operations. I
+								have been using Mongo DB for the past 2 years.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/16.postgreb4-rem.png" />
+							</div>
+							<h2>PostGre SQL</h2>
+							<p>
+								I have used PostGre SQL on my last client project. I can also
+								perform CRUD operations using PostGre SQL. I have more
+								experience using it with the Sequelize ORM.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/17.ethb4-rem.png" />
+							</div>
+							<h2>Ethereum - Solidity</h2>
+							<p>
+								I can understand Solidity smart contracts, test them on remix,
+								use hardhat js to deploy them, and ethers js or web3 js to build
+								a UI on the client side. I can also use truffle.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/18.awsb4-rem.png" />
+							</div>
+							<h2>AWS</h2>
+							<p>
+								I have hands-on experience with AWS Cognito - user management,
+								S3 - simple object storage, API gateway and lambda for
+								serverless function deployment and API management.
+							</p>
+						</div>
+						<div class="skills-item column">
+							<div class="icon">
+								<img src="./img/Skill-Logos/19.firebase.png" />
+							</div>
+							<h2>Firebase</h2>
+							<p>
+								I can use Firebase for Authentication and user management. I use
+								firestore to perform CRUD operations. I have used Firebase in
+								one of my latest personal projects called Bookworks (Still a work in progress).
+							</p>
+						</div>
+					</div>
+				</div>
 			</section>
+			<!-- End Skills Section -->
 
-      <section id="projects">
+			<section id="projects">
 				<h1>Projects</h1>
-				<p>
-					All projects and blogs
-				</p>
+				<p>All projects and blogs</p>
 			</section>
 
-      <section id="about">
+			<section id="about">
 				<h1>Home</h1>
-				<p>
-					About you and work experience 
-				</p>
+				<p>About you and work experience</p>
 			</section>
 
-      <section id="contact">
+			<section id="contact">
 				<h1>Home</h1>
-				<p>
-					email address
-				</p>
+				<p>email address</p>
 			</section>
-
-
-			
 		</main>
 		<footer>
 			<p>&copy; socials icons etc</p>
 		</footer>
 		<!-- Add any additional scripts you need -->
+		<script src="./script.js"></script>
 	</body>
 </html>
