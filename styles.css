@@ -779,6 +779,14 @@ ul {
 	}
 
 	/* Header End */
+
+	/* Skills */
+	#skills .skills-top p {
+		/* text-align: justify; */
+		padding: 0 18px;
+	}
+
+	/* Skills End */
 }
 
 @media (min-width: 360px) {
@@ -808,10 +816,17 @@ ul {
 	}
 
 	/* Header End */
+
+	/* Skills */
+	.section-title {
+		font-size: 4rem;
+	}
+	/* Skills End */
 }
 
 @media (min-width: 576px) {
 	/* Styles for small devices */
+	/* Header */
 	.brand h1 {
 		font-size: 3rem;
 	}
@@ -819,6 +834,14 @@ ul {
 	#header .nav-mobile-closed .nav-list-mobile {
 		left: 36%;
 	}
+	/* Header End */
+
+	/* Skills */
+	#skills .skills-top p {
+		text-align: center;
+		padding: 0;
+	}
+	/* Skills End */
 }
 
 @media (min-width: 768px) {
@@ -839,14 +862,9 @@ ul {
 		left: 40%;
 	}
 
-	/* Header End */
-
-	/* Hero */
-	/* #hero video {
-		height: 100vh;
-	} */
-
-	/* Hero End */
+	.section-title {
+		font-size: 6rem;
+	}
 }
 
 @media (min-width: 992px) {
