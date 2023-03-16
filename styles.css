@@ -348,6 +348,20 @@ ul {
 	top: 0;
 }
 
+#header .nav-mobile-closed {
+	height: 100vh;
+	position: absolute;
+	left: 100%;
+	top: 0%;
+	width: 100%;
+	background: var(--tertiary-color);
+	transition: left 0.9s ease-in-out;
+}
+
+#header .nav-mobile-open {
+	left: 0%;
+}
+
 /* Header section end */
 
 /* Hero section */
@@ -737,6 +751,28 @@ ul {
 		justify-content: center;
 		align-items: center;
 		margin: 0 0 10px 0;
+	}
+
+	#header .nav-mobile-closed {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		position: absolute;
+		left: 100%;
+		top: 0%;
+		width: 100%;
+		background: var(--tertiary-color);
+	}
+
+	#header .nav-mobile-open {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		width: 100%;
+		background: var(--tertiary-color);
 	}
 
 	/* Header End */
