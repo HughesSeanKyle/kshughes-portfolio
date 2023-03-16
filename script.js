@@ -4,17 +4,23 @@ const skillsHeading = document.querySelector('.skills-heading');
 const projectHeading = document.querySelector('.project-heading');
 const aboutHeading = document.querySelector('.about-heading');
 const contactHeading = document.querySelector('.contact-heading');
+const hamburger = document.querySelector('.nav-bar .hamburger');
 
-// ****Get the postion of an elm on the Y-axis
-const element = document.getElementById('thththt');
-const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+// ****Get the postion of an elm on the Y-axis - TEMP Code - ****Remove when done****
+// const element = document.getElementById('thththt');
+// const elementPosition = element.getBoundingClientRect().top + window.scrollY;
 
-console.log('element', element);
-console.log('elementPosition', elementPosition);
+// console.log('element', element);
+// console.log('elementPosition', elementPosition);
 
 // ****Get the postion of an elm on the Y-axis END
 
 // Event listeners
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	// mobile_menu.classList.toggle('active');
+});
+
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
