@@ -7,8 +7,9 @@ const contactHeading = document.querySelector('.contact-heading');
 const hamburger = document.querySelector('.nav-bar .hamburger');
 const mobileMenu = document.querySelector('.nav-bar .nav-list');
 const mobileMenuDiv = document.querySelector('.nav-mobile-closed');
+const bodyElm = document.querySelector('.bodyElm');
 
-console.log('mobileMenuDiv', mobileMenuDiv);
+console.log('bodyElm', bodyElm);
 
 // ****Get the postion of an elm on the Y-axis - TEMP Code - ****Remove when done****
 // const element = document.getElementById('thththt');
@@ -24,6 +25,7 @@ hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('active');
 	mobileMenu.classList.toggle('active');
 	mobileMenuDiv.classList.toggle('nav-mobile-open');
+	bodyElm.classList.toggle('overflow-hidden');
 });
 
 document.addEventListener('scroll', () => {
