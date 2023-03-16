@@ -11,9 +11,9 @@ const bodyElm = document.querySelector('.bodyElm');
 // const menuItem = document.querySelectorAll(
 // 	'.nav-bar .nav-mobile-closed .nav-list-mobile'
 // );
-const menuItems = document.querySelectorAll('#test-test li');
+const menuItems = document.querySelectorAll('#nav-list-mobile li');
 
-console.log('menuItems', menuItems);
+// console.log('menuItems', menuItems);
 
 // ****Get the postion of an elm on the Y-axis - TEMP Code - ****Remove when done****
 // const element = document.getElementById('thththt');

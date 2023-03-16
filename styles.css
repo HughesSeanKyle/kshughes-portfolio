@@ -747,6 +747,36 @@ ul {
 /* Scrollbar End */
 
 /* Media Queries */
+@media (min-width: 250px) {
+	/* Styles for extra small devices */
+	/* Header */
+
+	#header nav ul:nth-of-type(2) {
+		display: none;
+	}
+
+	#header .hamburger {
+		height: 50px;
+		width: 50px;
+		max-width: 50px;
+		max-height: 50px;
+	}
+
+	#header .hamburger .bar {
+		top: 19px;
+	}
+
+	.brand h1 {
+		font-size: 2.1rem;
+	}
+
+	#header .nav-mobile-closed .nav-list-mobile {
+		left: 15%;
+	}
+
+	/* Header End */
+}
+
 @media (min-width: 360px) {
 	/* Styles for extra small devices */
 	/* Header */
@@ -754,11 +784,37 @@ ul {
 		display: none;
 	}
 
+	#header .hamburger {
+		height: 50px;
+		width: 50px;
+		max-width: 50px;
+		max-height: 50px;
+	}
+
+	#header .hamburger .bar {
+		top: 21px;
+	}
+
+	.brand h1 {
+		font-size: 2.5rem;
+	}
+
+	#header .nav-mobile-closed .nav-list-mobile {
+		left: 19%;
+	}
+
 	/* Header End */
 }
 
 @media (min-width: 576px) {
 	/* Styles for small devices */
+	.brand h1 {
+		font-size: 3rem;
+	}
+
+	#header .nav-mobile-closed .nav-list-mobile {
+		left: 36%;
+	}
 }
 
 @media (min-width: 768px) {
@@ -773,6 +829,10 @@ ul {
 		justify-content: center;
 		align-items: center;
 		margin: 0 0 10px 0;
+	}
+
+	#header .nav-mobile-closed .nav-list-mobile {
+		left: 40%;
 	}
 
 	/* Header End */
