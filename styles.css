@@ -628,3 +628,27 @@ ul {
 }
 
 /* Scrollbar End */
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+	/* Styles for small devices */
+}
+
+@media (min-width: 768px) {
+	/* Styles for medium devices */
+}
+
+@media (min-width: 992px) {
+	/* Styles for large devices */
+}
+
+@media (min-width: 1200px) {
+	/* Styles for extra large devices */
+}
+
+@media (min-width: 1400px) {
+	/* Styles for extra extra large devices */
+}
+
+/* Media Queries End */
