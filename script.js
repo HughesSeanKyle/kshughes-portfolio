@@ -8,8 +8,12 @@ const hamburger = document.querySelector('.nav-bar .hamburger');
 const mobileMenu = document.querySelector('.nav-bar .nav-list');
 const mobileMenuDiv = document.querySelector('.nav-mobile-closed');
 const bodyElm = document.querySelector('.bodyElm');
+// const menuItem = document.querySelectorAll(
+// 	'.nav-bar .nav-mobile-closed .nav-list-mobile'
+// );
+const menuItems = document.querySelectorAll('#test-test li');
 
-console.log('bodyElm', bodyElm);
+console.log('menuItems', menuItems);
 
 // ****Get the postion of an elm on the Y-axis - TEMP Code - ****Remove when done****
 // const element = document.getElementById('thththt');
@@ -26,6 +30,16 @@ hamburger.addEventListener('click', () => {
 	mobileMenu.classList.toggle('active');
 	mobileMenuDiv.classList.toggle('nav-mobile-open');
 	bodyElm.classList.toggle('overflow-hidden');
+});
+
+menuItems.forEach((item) => {
+	item.addEventListener('click', () => {
+		console.log('clicked the nav mobile item');
+		hamburger.classList.remove('active');
+		mobileMenu.classList.remove('active');
+		mobileMenuDiv.classList.remove('nav-mobile-open');
+		bodyElm.classList.remove('overflow-hidden');
+	});
 });
 
 document.addEventListener('scroll', () => {
