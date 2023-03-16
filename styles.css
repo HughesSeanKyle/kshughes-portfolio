@@ -525,6 +525,7 @@ ul {
 	margin-bottom: 15px;
 	border-radius: 15px;
 	box-shadow: var(--custom-box-shadow-two);
+	width: 89%;
 }
 
 #projects .project-item {
