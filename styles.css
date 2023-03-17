@@ -655,6 +655,10 @@ ul {
 	border-radius: 40%;
 }
 
+#about-reference {
+	color: var(--primary-color);
+}
+
 /* End About Section */
 
 /* contact  */
