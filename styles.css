@@ -659,6 +659,10 @@ ul {
 	color: var(--primary-color);
 }
 
+.project-reference {
+	color: var(--primary-color);
+}
+
 /* End About Section */
 
 /* contact  */
