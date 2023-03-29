@@ -20,16 +20,19 @@
 	--custom-box-shadow-two: rgba(50, 50, 93, 0.25) 0px 9px 18px -3px,
 		rgba(0, 0, 0, 0.3) 0px 9px 9px -3px;
 }
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
+
 a {
 	text-decoration: none;
 	color: var(--plain-white);
@@ -53,6 +56,7 @@ i:hover {
 	align-items: center;
 	justify-content: center;
 }
+
 .row {
 	display: flex;
 	flex-direction: row;
@@ -123,6 +127,7 @@ p {
 	text-transform: uppercase;
 	color: white;
 }
+
 .brand h1 span {
 	color: var(--primary-color);
 }
@@ -174,15 +179,18 @@ ul {
 		transform: translateZ(400px) translateY(300px);
 		opacity: 0;
 	}
+
 	40% {
 		opacity: 0.6;
 	}
+
 	100% {
 		-webkit-transform: translateZ(0) translateY(0);
 		transform: translateZ(0) translateY(0);
 		opacity: 1;
 	}
 }
+
 @keyframes tracking-in-contract-bck-bottom {
 	0% {
 		letter-spacing: 1em;
@@ -190,9 +198,11 @@ ul {
 		transform: translateZ(400px) translateY(300px);
 		opacity: 0;
 	}
+
 	40% {
 		opacity: 0.6;
 	}
+
 	100% {
 		-webkit-transform: translateZ(0) translateY(0);
 		transform: translateZ(0) translateY(0);
@@ -217,21 +227,26 @@ ul {
 		letter-spacing: -0.5em;
 		opacity: 0;
 	}
+
 	40% {
 		opacity: 0.6;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
+
 @keyframes tracking-in-expand {
 	0% {
 		letter-spacing: -0.5em;
 		opacity: 0;
 	}
+
 	40% {
 		opacity: 0.6;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -242,6 +257,7 @@ ul {
 		opacity: 1;
 		transform: scale(1);
 	}
+
 	100% {
 		opacity: 0;
 		transform: scale(1.4);
@@ -305,6 +321,7 @@ ul {
 	margin-right: 20px;
 	padding: 0 9px;
 }
+
 #header .hamburger:after {
 	position: absolute;
 	content: '';
@@ -316,9 +333,9 @@ ul {
 	right: -3px;
 	bottom: -3px;
 }
+
 #header .hamburger .bar {
 	height: 2px;
-	/* width: 30px; */
 	position: relative;
 	background-color: var(--plain-white);
 	z-index: -1;
@@ -348,6 +365,7 @@ ul {
 #header .hamburger.active .bar::before {
 	bottom: 0;
 }
+
 #header .hamburger.active .bar::after {
 	top: 0;
 }
@@ -394,6 +412,7 @@ ul {
 	position: relative;
 	z-index: 1;
 }
+
 #hero::before {
 	content: '';
 	position: absolute;
@@ -476,7 +495,6 @@ ul {
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
-	/* overflow: hidden; */
 	box-shadow: var(--custom-box-shadow-two);
 }
 
@@ -497,6 +515,7 @@ ul {
 	color: var(--plain-white);
 	text-align: left;
 }
+
 /* End Services Section */
 
 /* Projects Section */
@@ -505,13 +524,16 @@ ul {
 	margin: 0 auto;
 	padding: 100px 0 0 0;
 }
+
 #projects .projects-header h1 {
 	margin-bottom: 50px;
 }
+
 #projects .all-projects {
 	align-items: center;
 	justify-content: center;
 }
+
 #projects .all-projects-mobile {
 	align-items: center;
 	justify-content: center;
@@ -534,8 +556,8 @@ ul {
 	width: 80%;
 	margin: 0px 0;
 	overflow: hidden;
-	/* border-radius: 10px; */
 }
+
 #projects .project-info {
 	padding: 30px;
 	flex-basis: 50%;
@@ -545,10 +567,12 @@ ul {
 	background-color: var(--tertiary-color);
 	color: var(--plain-white);
 }
+
 #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
+
 #projects .project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -572,9 +596,11 @@ ul {
 	overflow: hidden;
 	position: relative;
 }
+
 #projects .project-img img {
 	height: 31.7rem;
 }
+
 #projects .project-img:after {
 	content: '';
 	position: absolute;
@@ -585,9 +611,11 @@ ul {
 	background-color: black;
 	opacity: 0.7;
 }
+
 #projects .project-img img {
 	transition: 0.3s ease transform;
 }
+
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
@@ -607,6 +635,7 @@ ul {
 	display: flex;
 	flex-direction: row;
 }
+
 #about .about-col-left {
 	flex-basis: 40%;
 	height: 90rem;
@@ -623,6 +652,7 @@ ul {
 	padding: 3rem;
 	text-align: justify;
 }
+
 #about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -637,12 +667,14 @@ ul {
 #about .col-right p {
 	margin-bottom: 20px;
 }
+
 #about .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
@@ -672,12 +704,14 @@ ul {
 	justify-content: center;
 	min-width: 20vh;
 }
+
 #contact .contact-items {
 	width: 100%;
 	justify-content: center;
 	margin: 0;
 	padding: 25px 0 275px 0;
 }
+
 #contact .contact-item {
 	width: 27%;
 	height: 15rem;
@@ -686,13 +720,16 @@ ul {
 	align-items: center;
 	border-radius: 15px;
 }
+
 #contact .contact-item .icon {
 	flex-basis: 36%;
 	height: 70px;
 }
+
 #contact .contact-item .icon img {
 	object-fit: contain;
 }
+
 #contact .contact-item .contact-info {
 	flex-basis: 64%;
 	text-align: left;
@@ -705,12 +742,14 @@ ul {
 #contact .contact-info-h2 {
 	font-weight: 100;
 }
+
 /* End contact  */
 
 /* Footer */
 #footer {
 	background-color: var(--tertiary-color);
 }
+
 #footer .footer {
 	min-height: 200px;
 	padding-top: 50px;
@@ -718,6 +757,7 @@ ul {
 	align-items: center;
 	justify-content: center;
 }
+
 #footer h2 {
 	color: var(--plain-white);
 	font-weight: 500;
@@ -726,22 +766,27 @@ ul {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 #footer .social-icon {
 	display: flex;
 	margin-bottom: 30px;
 }
+
 #footer .social-item {
 	height: 50px;
 	width: 50px;
 	margin: 0 5px;
 }
+
 #footer .social-item img {
 	filter: grayscale(1);
 	transition: 0.3s ease filter;
 }
+
 #footer .social-item:hover img {
 	filter: grayscale(0);
 }
+
 #footer p {
 	color: var(--plain-white);
 	font-size: 1.3rem;
@@ -750,6 +795,7 @@ ul {
 #footer .footer-icon-padding {
 	padding: 15px 0;
 }
+
 /* End Footer */
 
 /* Scrollbar */
@@ -809,7 +855,6 @@ ul {
 
 	/* Skills */
 	#skills .skills-top p {
-		/* text-align: justify; */
 		padding: 0 18px;
 	}
 
@@ -819,6 +864,7 @@ ul {
 	#projects .all-projects {
 		display: none;
 	}
+
 	/* Projects End */
 
 	/* About */
@@ -836,6 +882,7 @@ ul {
 	#about .about-col-right {
 		padding: 2rem;
 	}
+
 	/* About End */
 
 	/* Contact */
@@ -886,6 +933,7 @@ ul {
 	.section-title {
 		font-size: 4rem;
 	}
+
 	/* Skills End */
 }
 
@@ -899,6 +947,7 @@ ul {
 	#header .nav-mobile-closed .nav-list-mobile {
 		left: 36%;
 	}
+
 	/* Header End */
 
 	/* Skills */
@@ -906,6 +955,7 @@ ul {
 		text-align: center;
 		padding: 0;
 	}
+
 	/* Skills End */
 
 	/* Projects */
@@ -917,6 +967,7 @@ ul {
 	#projects .all-projects-mobile {
 		display: none;
 	}
+
 	/* Projects End */
 
 	/* About */
@@ -934,6 +985,7 @@ ul {
 	#about .about-col-right {
 		padding: 3rem;
 	}
+
 	/* About End */
 
 	/* Contact */
