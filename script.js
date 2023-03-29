@@ -8,21 +8,7 @@ const hamburger = document.querySelector('.nav-bar .hamburger');
 const mobileMenu = document.querySelector('.nav-bar .nav-list');
 const mobileMenuDiv = document.querySelector('.nav-mobile-closed');
 const bodyElm = document.querySelector('.bodyElm');
-// const menuItem = document.querySelectorAll(
-// 	'.nav-bar .nav-mobile-closed .nav-list-mobile'
-// );
 const menuItems = document.querySelectorAll('#nav-list-mobile li');
-
-// console.log('menuItems', menuItems);
-
-// ****Get the postion of an elm on the Y-axis - TEMP Code - ****Remove when done****
-// const element = document.getElementById('thththt');
-// const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-
-// console.log('element', element);
-// console.log('elementPosition', elementPosition);
-
-// ****Get the postion of an elm on the Y-axis END
 
 // Event listeners
 hamburger.addEventListener('click', () => {
